@@ -18,6 +18,32 @@ body {
 header {
     background: salmon;
     grid-area: header;
+    display: grid;
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.bot-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.alerts, .profile{
+    display: flex;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 20%;
+    background-color: grey;
 }
 
 .sidebar {
@@ -27,8 +53,8 @@ header {
     grid-template-rows: 1fr 4fr 6fr;
 }
 
-.sidebar * {
-    padding-left: 0.5rem;
+.title {
+    font-size: 1.75rem;
 }
 
 .main-links, .second-links {
@@ -46,7 +72,7 @@ header {
 
 ul {
     margin: 0 0 0 32px;
-    line-height: 1.5
+    line-height: 1.5rem;
 }
 
 li {
