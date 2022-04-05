@@ -86,10 +86,6 @@ li {
     grid-template-columns: 4fr 2fr;
 }
 
-.main-content div {
-    border: 1px solid black;
-}
-
 .cards {
     display: grid;
     grid-template-rows: 1fr 19fr;
@@ -107,4 +103,28 @@ li {
 
 .right-sidebar {
     display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements, .trending {
+    display: grid;
+    grid-template-rows: 1fr 9fr
+}
+
+.announce-card-container, .trending-card-container {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    width: 16rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.announce-card {
+    display: grid;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
