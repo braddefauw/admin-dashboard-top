@@ -207,6 +207,7 @@ li[id^='icon']{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-left: 1rem solid #2568FB;
+    box-shadow: 10px 10px 8px #888888;
 }
 
 .card .card-title, .card .card-content {
@@ -248,8 +249,32 @@ li[id^='icon']{
     display: grid;
     height: 80%;
     width: 16rem;
-    border: 1px solid black;
+    background: white;
     margin-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.announcement {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    z-index : 1;
+}
+
+.primary:before {
+    content : "";
+    position: absolute;
+    left    : 10%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 80%;  /* or 100px */
+    border-bottom:1px solid black;
+}
+
+.announcement h6 {
+    align-self: end;
 }
 
 .announce-card {
