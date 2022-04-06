@@ -60,7 +60,7 @@ header {
 }
 
 .main-links {
-    align-content: space-between;
+    align-content: space-around;
 }
 
 .main-links li, .second-links li {
@@ -71,8 +71,12 @@ header {
 .title {
     font-size: 1.75rem;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    padding-top: 2rem;
+    font-weight: 700;
+}
+
+.title img {
+    height: 50px;
 }
 
 ul {
@@ -81,25 +85,8 @@ ul {
     list-style-type: none;
 }
 
-.title ul {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
 ul img {
-    padding: 0rem 0.5rem 0rem 0.5rem;
-}
-
-ul #icon-dog {
-    position: relative;
-    top: 5px;
-    left: 5px;
-}
-
-#icon-dog img {
-    height: 100%;
-    width: auto;
+    padding: 0rem 0.75rem 0rem 0.75rem;
 }
 
 .second-links {
@@ -110,6 +97,10 @@ ul #icon-dog {
     grid-area: main;
     display: grid;
     grid-template-columns: 4fr 2fr;
+}
+
+li[id^='icon']{
+    display: flex;
 }
 
 .cards {
