@@ -25,6 +25,7 @@ header {
 .top-row {
     display: grid;
     grid-template-columns: 3fr 2fr;
+    padding-bottom: 1rem;
 }
 
 header img {
@@ -79,6 +80,7 @@ header img {
 .bot-row {
     display: grid;
     grid-template-columns: 3fr 2fr;
+    padding-bottom: 1rem;
 }
 
 .bot-row button {
@@ -140,7 +142,7 @@ header img {
 }
 
 .main-links li, .second-links li {
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 2.5rem;
 }
 
