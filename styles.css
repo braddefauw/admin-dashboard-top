@@ -13,17 +13,45 @@ body {
     "sidebar header"
     "sidebar main"
     ;
-    background: #FECD45;
+    background: #CED2CC
 }
 
 header {
     grid-area: header;
     display: grid;
+    background: #2568FB;
 }
 
 .top-row {
     display: grid;
     grid-template-columns: 3fr 2fr;
+}
+
+header img {
+    height: 48px;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 0.75rem 0rem 0.75rem;
+}
+
+.search input {
+    width: 80%;
+    border-radius: 1rem;
+    background: #CED2CC;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#icon-search {
+    height: 2rem;
+    margin-right: 1rem;
 }
 
 .bot-row {
@@ -32,7 +60,18 @@ header {
 }
 
 .bot-row button {
-    background: #2568FB;
+    background: #FECD45;
+}
+
+.gd-prof {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+#gd-prof-large {
+    height: 72px;
+    width: 72px;
 }
 
 .alerts, .profile{
@@ -53,6 +92,7 @@ header {
     grid-area: sidebar;
     display: grid;
     grid-template-rows: 1fr 4fr 6fr;
+    background: #FECD45;
 }
 
 .main-links, .second-links {
@@ -110,12 +150,13 @@ li[id^='icon']{
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
 }
 
 .card {
     border: 1px solid black;
+    background: white;
 }
 
 .right-sidebar {
