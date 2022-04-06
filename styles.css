@@ -247,7 +247,7 @@ li[id^='icon']{
 
 .announce-card-container, .trending-card-container {
     display: grid;
-    height: 80%;
+    height: 90%;
     width: 16rem;
     background: white;
     margin-top: 1rem;
@@ -283,5 +283,13 @@ li[id^='icon']{
 
 .trending-card {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 4fr;
+}
+
+.trending-card img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    padding: 0rem 1rem 0rem 1rem;
 }
