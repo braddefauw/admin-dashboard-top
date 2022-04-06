@@ -13,10 +13,10 @@ body {
     "sidebar header"
     "sidebar main"
     ;
+    background: #FECD45;
 }
 
 header {
-    background: salmon;
     grid-area: header;
     display: grid;
 }
@@ -31,6 +31,10 @@ header {
     grid-template-columns: 3fr 2fr;
 }
 
+.bot-row button {
+    background: #2568FB;
+}
+
 .alerts, .profile{
     display: flex;
 }
@@ -43,18 +47,12 @@ header {
     margin-right: 16px;
     font-size: 17px;
     border-radius: 20%;
-    background-color: grey;
 }
 
 .sidebar {
-    background: blanchedalmond;
     grid-area: sidebar;
     display: grid;
     grid-template-rows: 1fr 4fr 6fr;
-}
-
-.title {
-    font-size: 1.75rem;
 }
 
 .main-links, .second-links {
@@ -70,17 +68,45 @@ header {
     line-height: 2.5rem;
 }
 
-ul {
-    margin: 0 0 0 32px;
-    line-height: 1.5rem;
+.title {
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-li {
-    list-style-image: url('http://upload.wikimedia.org/wikipedia/commons/1/19/Icons-mini-icon_attachment.gif');
+ul {
+    margin: 0 0 0 32px;
+    line-height: 3rem;
+    list-style-type: none;
+}
+
+.title ul {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+ul img {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+ul #icon-dog {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+#icon-dog img {
+    height: 100%;
+    width: auto;
+}
+
+.second-links {
+    align-items: baseline;
 }
 
 .main-content {
-    background: skyblue;
     grid-area: main;
     display: grid;
     grid-template-columns: 4fr 2fr;
@@ -117,9 +143,8 @@ li {
 
 .announce-card-container, .trending-card-container {
     display: grid;
-    height: 70%;
+    height: 80%;
     width: 16rem;
-    background-color: white;
     border: 1px solid black;
 }
 
