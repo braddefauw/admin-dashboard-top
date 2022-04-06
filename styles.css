@@ -25,7 +25,8 @@ header {
 .top-row {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 header img {
@@ -53,8 +54,12 @@ header img {
     padding: 0rem 0.75rem 0rem 0.75rem;
 }
 
-.alerts *, .profile *, .buttons * {
+.alerts *, .buttons * {
     padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.profile * {
+    margin-right: 1.5rem;
 }
 
 .search input {
@@ -144,6 +149,7 @@ header img {
 .main-links li, .second-links li {
     font-size: 1.5rem;
     line-height: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .title {
