@@ -31,15 +31,33 @@ header img {
     height: 48px;
 }
 
-.search {
+.search, .profile {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0rem 0.75rem 0rem 0.75rem;
 }
 
+.alerts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0rem 0.75rem 0rem 0.75rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 0.75rem 0rem 0.75rem;
+}
+
+.alerts *, .profile *, .buttons * {
+    padding: 0rem 1rem 0rem 1rem;
+}
+
 .search input {
-    width: 80%;
+    width: 100%;
     border-radius: 1rem;
     background: #CED2CC;
     border: none;
@@ -49,9 +67,13 @@ header img {
     box-sizing: border-box;
 }
 
-#icon-search {
+#icon-search, #icon-alert {
     height: 2rem;
     margin-right: 1rem;
+}
+
+.alerts h5 {
+    font-size: 1.25rem;
 }
 
 .bot-row {
@@ -61,6 +83,23 @@ header img {
 
 .bot-row button {
     background: #FECD45;
+    margin: 0rem 1rem 0rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-size: 1rem;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile h6 {
+    font-size: 1rem;
+}
+
+.profile h3 {
+    font-size: 1.5rem;
 }
 
 .gd-prof {
@@ -72,10 +111,6 @@ header img {
 #gd-prof-large {
     height: 72px;
     width: 72px;
-}
-
-.alerts, .profile{
-    display: flex;
 }
 
 /* Style the search box inside the navigation bar */
@@ -139,6 +174,10 @@ ul img {
     grid-template-columns: 4fr 2fr;
 }
 
+.main-content h4 {
+    font-size: 1.35rem;
+}
+
 li[id^='icon']{
     display: flex;
 }
@@ -146,20 +185,45 @@ li[id^='icon']{
 .cards {
     display: grid;
     grid-template-rows: 1fr 19fr;
+    padding: 2rem;
 }
 
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
+    margin-top: 1rem;
 }
 
 .card {
     border: 1px solid black;
     background: white;
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 0.5fr;
+}
+
+.card .card-title, .card .card-content {
+    margin-bottom: 0.5rem;
+}
+
+.card-title-p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.card-icons * {
+    padding: 0rem 0.5rem 0rem 0.5rem;
 }
 
 .right-sidebar {
+    padding: 2rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -178,6 +242,7 @@ li[id^='icon']{
     height: 80%;
     width: 16rem;
     border: 1px solid black;
+    margin-top: 1rem;
 }
 
 .announce-card {
